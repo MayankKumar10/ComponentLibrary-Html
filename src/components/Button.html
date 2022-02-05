@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../styles/root.css">
+</head>
+<body>
+  <!---------------------------------Button Component --------------------------------->
+
+  <div class="ButtonMainContainer padding-MainContainer">
+
+    <div class="ButtonContainerOne">
+      <h1 class="h1Tag">Button</h1>
+      <p class="descriptionOne ">Buttons allow users to take actions, and make choices, with a single tap.</p>
+    </div>
+  
+    <div class="ButtonContainerTwo paddingOtherContainer">
+      <h3 class="h3Tag">Basic Buttons</h3>
+      <p class="descriptionOne">The <code>Button</code> comes with three variants: text (default), contained, and outlined.</p>
+  
+        <div class="DOMContainer flex-row-center">
+          
+        <div class="AlertDomMainContainer">
+            <button type="button" class="defaultButton"> Default Text </button>
+        </div>
+
+        <div class="AlertDomMainContainer">
+            <input type="button" class="ButtonDomContainer descriptionOne TextButton flex-evenly" value="Text" />
+        </div>
+          
+      <div class="AlertDomMainContainer">
+          <input type="button" class="ButtonDomContainer descriptionOne primary-button flex-evenly buttonHoverShadow" value="Contained" />
+      </div>
+
+        <div class="AlertDomMainContainer">
+          <input type="button" class="ButtonDomContainer descriptionOne outline-button flex-evenly buttonHoverShadow" value="Outlined" />
+      </div>
+
+      <div class="AlertDomMainContainer">
+        <input type="button" class="ButtonDomContainer descriptionOne primary-button disabledButton flex-evenly" value="Disabled" />
+      </div>
+
+      </div>
+  </div>
+  
+    <div class="ButtonContainerTwo paddingOtherContainer">
+      <h3 class="h3Tag">Description</h3>
+      <p class="descriptionOne">You can use the Below Code to display a formatted title above the content.</p>
+  
+      <div class="DOMContainer flex-row-center">
+  
+        <div class="AlertDomMainContainer">
+          <a href="https://neog-lms.vercel.app/" class="linkButton"  target="_blank"><input type="button" class="ButtonDomContainer  descriptionOne AlertError flex-evenly buttonHoverShadow" value="Link" /></a>
+      </div>
+        
+      <div class="AlertDomMainContainer">
+        <div type="button" class="ButtonDomContainer descriptionOne AlertWarning flex-evenly buttonHoverShadow">
+          <i class="material-icons flex-row-center">visibility_off</i>
+          icons
+        </div>
+      </div>
+
+        <div class="AlertDomMainContainer">
+          <button type="button" class="ButtonDomContainer descriptionOne AlertInfo flex-evenly buttonHoverShadow buttonAnimation" value="Animation"><span>Animation</span></button>
+      </div>
+
+      <div class="AlertDomMainContainer">
+        <input type="button" class="ButtonDomContainer descriptionOne AlertSuccess flex-evenly box-shadow" value="Floating" />
+      </div>
+      
+    </div> 
+  </div>
+    
+  
+</div>
+
+<script src="../scripts/prism.js"></script>
+<script src="../scripts/icons.js"></script>
+
+</body>
+</html>
