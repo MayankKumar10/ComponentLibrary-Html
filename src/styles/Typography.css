@@ -1,5 +1,7 @@
 .TypoHtag {
   padding: 2em;
+  margin: 1em;
+  border-radius: 20px;
 }
 
 .text-gray {
