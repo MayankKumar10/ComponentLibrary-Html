@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../styles/root.css">
+</head>
+<body>
+  
+  <!---------------------------------input Component --------------------------------->
+
+  <div class="inputMainContainer padding-MainContainer">
+
+    <div class="inputContainerOne">
+      <h1 class="h1Tag">Input</h1>
+      <p class="descriptionOne ">An input displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+    </div>
+  
+    <div class="inputContainerTwo paddingOtherContainer">
+      <h3 class="h3Tag">Input</h3>
+      <p class="descriptionOne">The input offers four severity levels that set a distinctive icon and color.</p>
+  
+      <div class="DOMContainer input-grid ">
+
+        <div class="inputDomMainContainer">
+          <div class="inputDomContainer inputError  flex-evenly box-shadow">
+            <input class="inputField AlertError"  type="text" name="" id="" placeholder="Name">
+        </div>
+      </div>
+        
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertWarning" type="email" name="" id="" placeholder="email">
+      </div>
+      </div>
+
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertInfo" type="datetime-local" name="" id="" placeholder="date">
+      </div>
+      </div>
+  
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertSuccess" type="password" name="" id="" placeholder="password">
+      </div>
+      </div>
+
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertWarning" type="search" name="" id="" placeholder="search">
+          
+      </div>
+      </div>
+
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertInfo" type="textarea" name="" id=""  placeholder="Text Area">
+      </div>
+      </div>
+
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertWarning colorPicker" type="checkbox" name="radio" id="" placeholder="">
+          
+      </div>
+      </div>
+
+      <div class="inputDomMainContainer">
+        <div class="inputDomContainer inputWarning  flex-evenly box-shadow">
+          <input class="inputField AlertInfo" type="radio" name="radio" id="" placeholder="">
+      </div>
+      </div>
+
+      </div>
+
+      <div class="DOMContainer flex-row-center doc-ContainerMain">
+        <div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+        <div class="doc-Container">
+        <pre><code class="language-markup line-numbers">
+          &lt;div class="inputDomMainContainer"&gt;
+            &lt;div class="inputDomContainer inputError  flex-evenly box-shadow"&gt;
+              &lt;input class="inputField AlertError"  type="text" name="" id="" placeholder="Name"&gt;
+              &lt;input class="inputField AlertWarning" type="email" name="" id="" placeholder="email"&gt;
+    
+              &lt;input class="inputField AlertInfo" type="datetime-local" name="" id="" placeholder="date"&gt;
+                   
+              &lt;input class="inputField AlertSuccess" type="password" name="" id="" placeholder="password"&gt;
+               
+              &lt;input class="inputField AlertWarning" type="search" name="" id="" placeholder="search"&gt;
+                 
+              &lt;input class="inputField AlertInfo" type="textarea" name="" id=""  placeholder="Text Area"&gt;
+              
+              &lt;input class="inputField AlertWarning colorPicker" type="checkbox" name="radio" id="" placeholder=""&gt;
+              
+              &lt;input class="inputField AlertInfo" type="radio" name="radio" id="" placeholder=""&gt;
+                   
+            &lt;/div&gt;
+        &lt;/div&gt;
+        </code></pre>
+        
+        </div>
+        </div>
+        </div>
+    </div>
+  
+
+    <div class="inputContainerTwo paddingOtherContainer">
+      <h3 class="h3Tag">Input</h3>
+      <p class="descriptionOne">The input offers four severity levels that set a distinctive icon and color.</p>
+  
+      <div class="DOMContainer flex-evenly">
+
+        <div class="inputDomMainContainer">
+          
+          <form class="formContainerMain inputDomContainer input-flex inputError box-shadow" action="submit" autocomplete="on">
+            
+            <div class="formContainer input-flex">
+              <h3 class="h3Tag">Sign Up</h3>
+                   <p class="descriptionOne">Please fill in this form to create an account</p>
+              </div>
+            
+              <div class="formContainer">
+                <div class="formName inputDomContainer formInput AlertError inputError  flex-evenly box-shadow">
+                  <label for="">First Name</label>
+                  <input class="formInput AlertError" type="text" name="" id="" pattern="[A-Za-z]{10}" placeholder="First Name" required>
+                </div>
+                
+                <div class="formName inputDomContainer formInput AlertWarning inputError  flex-evenly box-shadow">
+                  <label for="">Last Name</label>
+                  <input class="formInput AlertWarning" type="text" name="" id="" pattern="[A-Za-z]{10}" placeholder="Last Name">
+                </div>
+    
+                <div class="formEmail inputDomContainer formInput AlertInfo inputError  flex-evenly box-shadow">
+                  <label for="">Email</label>
+                  <input class="formInput AlertInfo" type="email" name="" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" title="should contain A-Z and /number @ and . " placeholder="Email" autocomplete="off">
+                </div>
+                
+                <div class="formPassword inputDomContainer formInput AlertSuccess inputError  flex-evenly box-shadow">
+                  <label for="">Password</label>
+                  <input class="formInput AlertSuccess" type="password" name="" id="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password">
+                </div>
+                
+                <span><input type="checkbox" name="" id=""> I accept the <code>Terms of Use</code> & <code>Privacy Policy</code> </span>
+                
+              </div>
+
+              <div class="formButtonContainer flex-evenly">
+                <div class="AlertDomMainContainer">
+                  <input type="submit" class="ButtonDomContainer descriptionOne primary-button flex-evenly buttonHoverShadow" value="Submit" />
+              </div>
+                
+              <div class="AlertDomMainContainer">
+                <input type="Reset" class="ButtonDomContainer descriptionOne primary-button flex-evenly buttonHoverShadow" value="Reset" />
+              </div>
+                
+              </div>
+             
+            
+          </form>
+      </div>
+        
+
+      </div>
+      
+    </div>
+
+<div class="DOMContainer flex-row-center doc-ContainerMain">
+<div class="ImageDomContainer TypoHtag AlertInfo ImageWarning flex-column-start box-shadow">
+<div class="doc-Container">
+<pre><code class="language-markup line-numbers">
+
+&lt;div class="DOMContainer flex-evenly">
+
+&lt;div class="inputDomMainContainer">
+
+&lt;form class="formContainerMain inputDomContainer input-flex inputError box-shadow" action="submit" autocomplete="on">
+
+&lt;div class="formContainer input-flex">
+&lt;h3 class="h3Tag">Sign Up&lt;/h3>
+&lt;p class="descriptionOne">Please fill in this form to create an account&lt;/p>
+&lt;/div>
+
+&lt;div class="formContainer">
+&lt;div class="formName inputDomContainer formInput AlertError inputError  flex-evenly box-shadow">
+&lt;label for="">First Name&lt;/label>
+&lt;input class="formInput AlertError" type="text" name="" id="" pattern="[A-Za-z]{10}" placeholder="First Name" required>
+&lt;/div>
+
+&lt;div class="formName inputDomContainer formInput AlertWarning inputError  flex-evenly box-shadow">
+&lt;label for="">Last Name&lt;/label>
+&lt;input class="formInput AlertWarning" type="text" name="" id="" pattern="[A-Za-z]{10}" placeholder="Last Name">
+&lt;/div>
+
+&lt;div class="formEmail inputDomContainer formInput AlertInfo inputError  flex-evenly box-shadow">
+&lt;label for="">Email&lt;/label>
+&lt;input class="formInput AlertInfo" type="email" name="" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" title="should contain A-Z and /number @ and . " placeholder="Email" autocomplete="off">
+&lt;/div>
+
+&lt;div class="formPassword inputDomContainer formInput AlertSuccess inputError  flex-evenly box-shadow">
+&lt;label for="">Password&lt;/label>
+&lt;input class="formInput AlertSuccess" type="password" name="" id="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password">
+&lt;/div>
+
+&lt;span>&lt;input type="checkbox" name="" id=""> I accept the &lt;code>Terms of Use&lt;/code> & &lt;code>Privacy Policy&lt;/code> &lt;/span>
+
+&lt;/div>
+
+&lt;div class="formButtonContainer flex-evenly">
+&lt;div class="AlertDomMainContainer">
+&lt;input type="submit" class="ButtonDomContainer descriptionOne primary-button flex-evenly buttonHoverShadow" value="Submit" />
+&lt;/div>
+
+&lt;div class="AlertDomMainContainer">
+&lt;input type="Reset" class="ButtonDomContainer descriptionOne primary-button flex-evenly buttonHoverShadow" value="Reset" />
+&lt;/div>
+
+&lt;/div>
+
+
+&lt;/form>
+&lt;/div>
+
+
+</code></pre>
+
+</div>
+</div>
+</div>
+
+
+  </div>
+
+<script src="../scripts/prism.js"></script>
+<script src="../scripts/icons.js"></script>
+
+</body>
+</html>

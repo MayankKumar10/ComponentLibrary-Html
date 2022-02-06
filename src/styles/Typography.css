@@ -1,0 +1,11 @@
+.TypoHtag {
+  padding: 2em;
+}
+
+.text-gray {
+  color: var(--color-description);
+}
+
+.text-center {
+  text-align: center;
+}
