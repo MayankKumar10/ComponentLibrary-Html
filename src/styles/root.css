@@ -266,6 +266,12 @@ div.code-toolbar:hover > .toolbar {
 .h3Tag {
 }
 
+.TypoHtag {
+  padding: 2em;
+  margin: 1em;
+  border-radius: 20px;
+}
+
 .vision-video-bg {
   background-color: var(--color-vision-bg);
 }
@@ -319,6 +325,10 @@ div.code-toolbar:hover > .toolbar {
   font-weight: 400;
   padding: 0.5em 0em;
   color: var(--color-description);
+}
+
+.discriptionText {
+  font-size: 1.5vw;
 }
 
 .flex-evenly {
