@@ -1,3 +1,6 @@
-import '../scripts/Cards.js';
+import './Cards.js';
 
-import '../scripts/prism.js'
+import './prism.js'
+
+
+
