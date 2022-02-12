@@ -20,7 +20,7 @@
   padding-bottom: 10px;
 }
 .imgcard-Transition {
-  transition: transform 2s;
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .userInfoPrimary {
@@ -132,7 +132,7 @@
 
 .card-horizontal {
   display: flex;
-  width: 42em;
+  width: 41em;
 }
 
 .card-sold-product {
