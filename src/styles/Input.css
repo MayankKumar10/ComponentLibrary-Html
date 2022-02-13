@@ -23,6 +23,11 @@
   font-size: medium;
 }
 
+.input-radio-chk {
+  width: 8rem;
+  height: 2rem;
+}
+
 .inputField:focus {
   border-color: var(--color-pureWhite);
 }
