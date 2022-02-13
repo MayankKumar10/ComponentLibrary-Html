@@ -15,6 +15,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://www.w3schools.com/w3css/4/w3.css");
 @import url("./prism.css");
+@import url("./Grid.css");
+@import url("./Navigation.css");
+@import url("./Modal.css");
+@import url("./Lists.css");
+@import url("./Rating.css");
+@import url("./Slider.css");
 
 *,
 *::before,
@@ -48,6 +54,12 @@
   --color-successBackground: rgb(237, 247, 237);
   --color-success: rgb(30, 70, 32);
   --color-vision-bg: #c4c6d1;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-900: 900;
 
   --Mak-colors-gray-50: #f7fafc;
   --Mak-colors-gray-100: #edf2f7;
@@ -255,15 +267,82 @@ div.code-toolbar:hover > .toolbar {
   margin-top: -3em;
 }
 
+.fs-rem-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.fs-rem-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.fs-rem-normal {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.fs-rem-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.fs-rem-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.fs-rem-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.fs-rem-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.fs-rem-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.fs-rem-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.fs-rem-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.fs-rem-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 /*---------------------Component---------------------*/
 
-.h1Tag {
+.h1 {
+  font-size: 3rem;
+  line-height: 64px;
 }
 
-.h2Tag {
+.h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
-.h3Tag {
+.h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.h5 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.TypoHtag {
+  padding: 2em;
+  margin: 1em;
+  border-radius: 20px;
 }
 
 .vision-video-bg {
@@ -279,7 +358,7 @@ div.code-toolbar:hover > .toolbar {
 
 .GettingStartedIframeAside,
 .GettingStartedIframeMain {
-  height: 41em;
+  height: 42.0625rem;
   border: 0;
 }
 
@@ -303,12 +382,15 @@ div.code-toolbar:hover > .toolbar {
 }
 
 .paddingOtherContainer {
-  padding: 4em;
+  padding: 4rem 0;
 }
 
+.padding-normal {
+  padding: 1rem;
+}
 .DOMContainer {
   background-color: var(--color-pureWhite);
-  width: 42em;
+  width: 43em;
   border-radius: 20px;
   border: 1px solid var(--color-description);
 }
@@ -319,6 +401,29 @@ div.code-toolbar:hover > .toolbar {
   font-weight: 400;
   padding: 0.5em 0em;
   color: var(--color-description);
+}
+
+.description-avatar {
+  margin: 0.875rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0rem;
+  color: var(--color-description);
+}
+
+.discriptionText {
+  font-size: 1.5vw;
+  max-width: 60ch;
+}
+
+.input-radio-chk {
+  width: 8rem;
+  height: 2rem;
+}
+/*-----------------------flex-----------------------*/
+
+.flex {
+  display: flex;
 }
 
 .flex-evenly {
@@ -351,6 +456,7 @@ div.code-toolbar:hover > .toolbar {
     0 1px 18px 0 rgb(0 0 0 / 12%);
 }
 
+.box-shadow-round,
 .box-shadow-round:hover {
   box-shadow: 0 7px 6px rgb(0 0 0 / 43%);
 }
@@ -431,16 +537,16 @@ div.code-toolbar:hover > .toolbar {
 }
 
 .imgTransition {
-  transition: transform 2s;
+  transition: width 2s, height 2s, transform 2s;
 }
 
-img.imgcard.imgcard-Transition.imgTransition\:hover {
-  transform: scale(1.03);
-}
-
-/* .imgTransition:hover {
+/* img.imgcard.imgcard-Transition.imgTransition:hover {
   transform: scale(1.03);
 } */
+
+.imgTransition:hover {
+  transform: scale(1.03);
+}
 
 img-responsive {
   width: 100%;
